@@ -101,7 +101,7 @@ Nib.prototype.draw = function() {
 var P = 100;
 
 var SIZE = 3;
-var STEP = 90;
+var STEP = 5;
 var offsetX, offsetY;
 var lenX, lenY;
 
@@ -116,7 +116,7 @@ function init() {
 }
 
 function color() {
-  var n = random() < 0.5 ? rint(0, 30) : rint(340, 360);
+  var n = random() < 0.5 ? rint(0, 10) : rint(15, 25);
   return 'hsla('+n+', 90%, 40%, 0.2)';
 }
 

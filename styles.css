@@ -29,4 +29,6 @@ h1.title {
   text-align: center;
   color: white;
   font-size:24vw;
+  line-height:18vw;
+  text-shadow:0 5px 5px rgba(255,255,255,0.5);
 }
