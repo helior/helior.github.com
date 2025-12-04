@@ -1,0 +1,26 @@
+# Robots.txt file for www.example.com
+# This file tells search engines and crawlers which parts of the site they can access
+
+# Default rules for all bots
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /*?*
+Disallow: /*.json$
+Disallow: /api/
+
+# Specific rules for Facebook's crawler - allow access for open graph metadata
+User-agent: facebookexternalhit
+Allow: /
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl delay settings (in seconds)
+Crawl-delay: 1
